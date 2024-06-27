@@ -1,0 +1,6 @@
+public class AccountHelper {
+    @AuraEnabled(cacheable=true)
+    public static List<Account> getAccountData(){
+        return [Select Id,Name,Industry,Rating from Account With SECURITY_ENFORCED];
+    }
+}
