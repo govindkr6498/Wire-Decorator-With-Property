@@ -1,0 +1,1 @@
+# Wire-Decorator-With-Property
